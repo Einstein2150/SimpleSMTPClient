@@ -85,6 +85,7 @@ namespace SimpleSmtpClient
             mailMessage.From = new MailAddress(guiEmailFrom.Text);
             mailMessage.To.Add(guiEmailTo.Text);
             mailMessage.Body = guiEmailBody.Text;
+            mailMessage.IsBodyHtml = guiIsBodyHTML.Checked;
             mailMessage.Subject = guiEmailSubject.Text;
             return mailMessage;
         }
